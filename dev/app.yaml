@@ -5,7 +5,9 @@ metadata:
   namespace: argocd
 spec:
   project: default
-  source: 
+  source:
+    directory:
+      recurse: true 
     repoURL: https://github.com/respoamit/platform-app.git
     path: platform-app
     targetRevision: main
